@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+}
+marquee{
+    direction: right;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    border:2px dashed black;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px #fee140,0 0 24px #fee140,0 0 36px #fee140,0 0 48px #fee140;
+}
+.container{
+    height: auto;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    margin: 5px;
+}
+.code_container{
+    height: auto;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5px;
+}
+.card{
+    height:270px;
+    width: 260px;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    margin: 10px 10px 0 10px;
+    margin-bottom:-15em;
+    transition: margin-bottom 100ms;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.card1{
+    height:250px;
+    width: 250px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    margin: 10px 10px 0 10px;
+    margin-bottom:-2em;
+    transition: margin-bottom 100ms;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.card1:hover+.card1{
+    margin-bottom: -20em;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+}
+p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+pre{
+    margin-left: -100px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 11px;
+    color: navy;
+    overflow: hidden;
+}
+@media screen and (min-width:350px) and (max-width:600px) {
+    .container .code_container{
+        resize: both;
+    }
+    .card .card1{
+        flex-flow: 1 1 auto;
+    }
+    
+}
