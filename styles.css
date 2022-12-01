@@ -62,7 +62,7 @@ h1{
     border-radius: 10px;
     border: 2px solid gray;
 }
-.card1:hover+.card1{
+.card1:hover{
     margin-bottom: -20em;
 }
 span{
